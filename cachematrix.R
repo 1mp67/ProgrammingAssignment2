@@ -3,10 +3,9 @@
 ## the cache or by computing it.
 
 
-## cacheSolve takes a special matrix (created by makeCacheMatrix function above)
-## as an argument and checks to see if the inverse has already been calculated.
-## If so, it returns the cached value. If not, then it calculates the inverse
-## using the solve function, and sets and returns this inverse.
+## makeCacheMatrix creates a special matrix object that holds an inverse value,
+## a matrix, and four functions related to getting and setting the matrix, 
+## and getting and setting the inverse of the matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
      inverse <- NULL       # start off with inverse set to NULL
